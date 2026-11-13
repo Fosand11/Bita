@@ -30,8 +30,20 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# Variables de entorno locales
-.env*.local
+# Variables de entorno (NUNCA se suben; usa .env.example como plantilla)
+.env
+.env.*
+!.env.example
+
+# Configuración local de Claude Code
+.claude/
+
+# Editor
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
 
 # Backend temporal (vive aquí solo hasta moverlo a su propio repo Bita-core)
 backend/
