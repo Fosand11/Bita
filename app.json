@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Bita",
+    "slug": "bita",
+    "version": "1.0.0",
+    "scheme": "bita",
+    "orientation": "portrait",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.bita.medical",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Bita necesita acceso a la cámara para fotografiar y registrar tus recetas, comprobantes y resultados médicos.",
+        "NSPhotoLibraryUsageDescription": "Bita necesita acceso a tu galería para adjuntar fotos de tus documentos de salud."
+      }
+    },
+    "android": {
+      "package": "app.bita.medical",
+      "adaptiveIcon": {
+        "backgroundColor": "#FAF7F2"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Bita necesita acceso a tu galería para adjuntar fotos de tus documentos de salud.",
+          "cameraPermission": "Bita necesita acceso a la cámara para fotografiar y registrar tus recetas, comprobantes y resultados médicos."
+        }
+      ],
+      "expo-secure-store",
+      "./plugins/withIosSceneAdoption.js"
+    ]
+  }
+}

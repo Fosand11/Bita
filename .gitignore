@@ -1,0 +1,38 @@
+# Dependencias (NUNCA se suben a Git)
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Nativo generado automáticamente por `expo prebuild` a partir de app.json.
+# No se edita a mano: cualquier cambio de permisos/plugins va en app.json y se regenera.
+/ios/
+/android/
+
+# Nativo / builds
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.metro-health-check*
+
+# Logs y temporales
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Variables de entorno locales
+.env*.local
+
+# Backend temporal (vive aquí solo hasta moverlo a su propio repo Bita-core)
+backend/
+
